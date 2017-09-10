@@ -6,11 +6,37 @@
 
     <title>Scatterplot</title>
 
-    <!--<link rel="stylesheet" href="css/styles.css?v=1.0">-->
+    <style>
+  .axis text {
+    font: 10px sans-serif;
+    text-align: right;
+  }
+
+
+  .axis path,
+  .axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+  }
+
+  .x path, .x line {
+    fill: none;
+    stroke: none;
+  }
+
+  h1 {
+    position:absolute;
+    top: 10px;
+  }
+</style>
+
 </head>
 
 <body>
+<div id="chart"></div>
 
+<script src="//d3js.org/d3.v3.min.js"></script>
 <script src="index.js"></script>
 </body>
 </html>
